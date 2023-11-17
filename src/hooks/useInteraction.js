@@ -1,18 +1,16 @@
 import { useState } from "react"
 
 export const useInteraction = () => {
-    const numAleatorio1 = Math.trunc(Math.random() * 1000)
-    const numAleatorio2 = Math.trunc(Math.random() * 1000)
 
-    const [counterReplies, setCounterReplies] = useState(numAleatorio1)
+    const [counterReplies, setCounterReplies] = useState(Math.trunc((Math.random() * 1000)))
 
     const [repeated, setRepeated] = useState(false)
-    const [counterRepeat, setCounterRepeat] = useState(numAleatorio2)
+    const [counterRepeat, setCounterRepeat] = useState(Math.trunc(Math.random() * 1000))
 
-    const [counterLikes, setCounterLikes] = useState(numAleatorio1)
+    const [counterLikes, setCounterLikes] = useState(Math.trunc(Math.random() * 1000))
     const [liked, setLiked] = useState(false)
 
-    const [counterStatistics, setCounterStatistics] = useState(numAleatorio2)
+    const [counterStatistics, setCounterStatistics] = useState(Math.trunc(Math.random() * 1000))
 
     const addRetweet = () => {
         setCounterRepeat(counterRepeat + 1)
