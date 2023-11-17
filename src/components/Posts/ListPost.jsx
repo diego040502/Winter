@@ -9,11 +9,11 @@ export const ListPost = () => {
   return (
     <>
       <form onSubmit={handleSubmit} className="w-full border-solid border-zinc-700 border-t-[1px] border-b-[1px]">
-        <div className="flex flex-row mt-[10px] w-full">
+        <section className="flex flex-row mt-[10px] w-full">
           <img src="https://xsgames.co/randomusers/avatar.php?g=male"
             alt="" className="w-[40px] h-[40px] rounded-[50px] ml-[10px]" />
           <textarea value={input} onChange={handleChange} className="border-none resize-none ml-[10px] bg-transparent text-[20px] text-zinc-400" placeholder="What is Happening?!"></textarea>
-        </div>
+        </section>
         <div className="flex flex-row">
           <Icons />
           <button onClick={handleSubmit} className="bg-sky-600 font-bold w-[75px] h-[40px] rounded-[20px] mr-[20px] mb-[10px]">Post</button>
