@@ -14,10 +14,10 @@ export const ListPost = () => {
             alt="" className="w-[40px] h-[40px] rounded-[50px] ml-[10px]" />
           <textarea value={input} onChange={handleChange} className="border-none resize-none ml-[10px] bg-transparent text-[20px] text-zinc-400" placeholder="What is Happening?!"></textarea>
         </section>
-        <div className="flex flex-row">
+        <section className="flex flex-row">
           <Icons />
           <button onClick={handleSubmit} className="bg-sky-600 font-bold w-[75px] h-[40px] rounded-[20px] mr-[20px] mb-[10px]">Post</button>
-        </div>
+        </section>
       </form>
       {
         post.map((us) => (
