@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { IconX } from "@tabler/icons-react"
 import { useModal } from "../../hooks/useModal"
 import { PremiumOptions } from "./PremiumOptions"

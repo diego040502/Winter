@@ -4,7 +4,7 @@ import { trends } from '../../helpers/trends.js'
 export const Trends = () => {
 
   return (
-    <div className="mt-[10px] w-[90%] h-auto bg-[rgb(22_24_28)] ml-[20px] mr-[20px] rounded-[10px]">
+    <section className="mt-[10px] w-[90%] h-auto bg-[rgb(22_24_28)] ml-[20px] mr-[20px] rounded-[10px]">
       <h1 className="text-[21px] font-bold ml-[10px] p-[10px]">Trends for you</h1>
       {
         trends.map((trend) => (
@@ -19,6 +19,6 @@ export const Trends = () => {
           </div>
         ))
       }
-    </div>
+    </section>
   )
 }

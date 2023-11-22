@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 export const PremiumCard = ({ handleClick }) => {
   return (
     <div className="rounded-[10px] bg-[rgb(22_24_28)] ml-[20px] mt-[20px] mr-[20px] w-[90%] p-[15px] break-normal">
