@@ -13,19 +13,19 @@ function App() {
   const { click, updateClick } = useModal()
 
   return (
-    <div className='grid grid-cols-[350px_minmax(100px,_1fr)_400px] h-full'>
+    <main className='grid grid-cols-[350px_minmax(100px,_1fr)_400px] h-full'>
       <Menu />
       <Compose />
       {
         click && <PremiumModal handleClick={updateClick} />
       }
-      <div className='flex flex-col'>
+      <section className='flex flex-col'>
         <SearchBar />
         <PremiumCard handleClick={updateClick}/>
         <Trends />
         <Follow />
-      </div>
-    </div>
+      </section>
+    </main>
   )
 }
 
